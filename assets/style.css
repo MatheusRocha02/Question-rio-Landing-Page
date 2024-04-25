@@ -1,0 +1,201 @@
+:root{
+    --purple: #035758a9;
+    --dark-purple: rgb(22, 1, 22);
+    --white: #f1e9f5;
+    --black: #000000f3;
+    --default-gap: 2rem;
+    --shadow: 0.1rem 0.1rem 0.5rem var(--black);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+font-size: 1.6rem;
+font-family: 'poppins';
+background: linear-gradient(45deg,#18a5a7, rgb(23, 2, 41) );
+color: var(--white);
+padding: 4rem 8rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+a{
+    color: var(--white);
+}
+legend{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+hr{
+    width: 40rem;
+}
+input{
+    background: var(--purple);
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'poppins';
+    box-shadow: var(--shadow)
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
+}
+.intro-text p{
+    font-size: 2rem;
+    font-style: italic;
+}
+img{
+    width: 20rem;
+    border-radius: 15rem;
+    border: 0.2rem solid var(--black);
+    box-shadow: var(--shadow)
+}
+form{
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    width: 70rem;
+    margin-bottom: 2rem;
+    padding: 3rem 6rem;
+    background: rgba(8, 8, 8, 0.137);
+    backdrop-filter: blur(2rem);
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+fieldset div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+    margin-bottom: var(--default-gap);
+}
+.informacoes-basicas{
+    flex-direction: column;
+}
+.informacoes-basicas div{
+    gap: 2rem;
+}
+.informacoes-projeto{
+ flex-direction: column;
+ gap: 2rem;
+}
+.informacoes-projeto div{
+    justify-content: space-between;
+}
+.estilo-visual,
+.secoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: var(--default-gap);
+}
+.cores div input{
+    box-shadow: none;
+    background-color: transparent;
+}
+.estilo-visual div input{
+    background: transparent;
+    color: var(--purple);
+}
+.especificacoes{
+    flex-direction: column;
+    gap: 0;
+    width: 80%;
+}
+.integracao-redes-sociais-links{
+    flex-direction: column;
+    width: 80%;
+}
+.info-adicionais{
+    width: 80%;
+}
+.confirmacao{
+    display: flex;
+    flex-direction: row;
+}
+.confirmacao input{
+    box-shadow: none;
+}
+.botoes{
+    display: flex;
+    gap: var(--default-gap);
+}
+.botoes button{
+    background-color: var(--purple);
+    color: white;
+    font-family: 'poppins';
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+}
+.informacoes{
+    width: 50%;
+}
+footer{
+    margin-top: 5rem;
+}
+@media (max-width: 768px) {
+    .intro-text h1{
+        font-size: 2.5rem;
+    }
+    hr{
+        width: 25rem;
+    }
+    .intro-text h2{
+        font-size: 1.8rem;
+    }
+    .intro-text p{
+        font-size: 1.5rem;
+    }
+    legend{
+        font-size: 2rem;
+    }
+    fieldset{
+        width: 35rem;
+    }
+    fieldset div{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .informacoes-basicas div{
+        gap: 0;
+    }
+    .informacoes{
+        width: 100%;
+    }
+    .integracao-redes-sociais-links{
+        gap: 1.5rem;
+    }
+    .confirmacao{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
